@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unwined</title>
+    <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9f588b52d7.js" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Protest+Strike&display=swap" rel="stylesheet">
+  </head>
+  <body> 
+    <!--Navbar-->
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#.html"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="Home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Wine</a></li>
+            <li><a class="dropdown-item" href="#">Boxes</a></li>
+          </ul>
+        </li>
+      </li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="aboutus.html">About</a></li>
+      </ul>
+      <ul>
+        <li><a class="unwined" href="Home.html">Unwined</a></li>
+        <li class="hmb"><a href="Home.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Products
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Wine</a></li>
+            <li><a class="dropdown-item" href="#">Boxes</a></li>
+          </ul>
+        </li>
+      </li>
+        <li class="hmb"><a href="order.html">Order</a></li>
+        <li class="hmb"><a href="aboutus.html">About</a></li>
+        <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+<main>
+<div class="products">
+  <h2>Our Packages</h2>
+  <div class="menu">
+    <div class="menu-item">
+            <img src="Images/Menu/1.png" alt="Item 1">
+            <div class="item-info">
+                <h2>Heart Box w/<br> Wine<br> 
+                  <p class="price">₱2,149</p>
+                </h2>
+                    <button onclick="addToCart('Heart Box w/ Wine', 2149)"><img src="Images/Menu/solidcart.svg"></button>
+            </div>
+        </div>
+        <div class="menu-item">
+          <img src="Images/Menu/2.png" alt="Item 2">
+          <div class="item-info">
+              <h2>Medium Box w/ Wine<br> 
+                <p class="price">₱2,449</p>
+              </h2>
+              
+                  <button onclick="addToCart('Medium Box w/ Wine', 2449)"><img src="Images/Menu/solidcart.svg"></button>
+              
+          </div>
+        </div>
+        <div class="menu-item">
+          <img src="Images/Menu/3.png" alt="Item 3">
+          <div class="item-info">
+              <h2>Large Box w/ Wine <br> 
+                <p class="price">₱3,649</p>
+              </h2>
+              
+                  <button onclick="addToCart('Large Box w/ Wine', 3649)"><img src="Images/Menu/solidcart.svg"></button>
+              
+          </div>
+      </div>
+      <div class="menu-item">
+        <img src="Images/Menu/4.png" alt="Item 4">
+        <div class="item-info">
+          <h2>10" Platter w/ Wine<br> 
+            <p class="price">₱3,349</p>
+          </h2>
+          
+              <button onclick="addToCart('10 Platter w/ Wine', 3349)"><img src="Images/Menu/solidcart.svg"></button>
+          
+      </div>
+  </div>
+  <div class="menu-item">
+    <img src="Images/Menu/5.png" alt="Item 5">
+        <div class="item-info">
+          <h2>12" Platter w/ Wine<br> 
+            <p class="price">₱4,549</p>
+          </h2>
+              <button onclick="addToCart('12 Platter w/ Wine', 4549)"><img src="Images/Menu/solidcart.svg"></button>
+      </div>
+    </div>
+    <div class="menu-item">
+      <img src="Images/Menu/6.png" alt="Item 6">
+          <div class="item-info">
+            <h2>Cuppacheese<br><br>
+              <p class="price">₱175</p><br>
+            </h2>
+                <button onclick="addToCart('Cuppacheese', 175)"><img src="Images/Menu/solidcart.svg"></button>
+        </div>
+      </div>
+  </div>
+</div>
+</main>
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Unwined by JC Company isn't just a business; it's a passion project born from a love of good food, 
+          shared moments, and the simple act of unwinding. Our story starts not in a corporate office, but around a sun-drenched kitchen 
+          table, laughter mingling with the aroma of sizzling sausages and freshly baked bread. JC, the mastermind behind Unwind, found 
+          solace in the art of charcuterie. The meticulous layering of meats, cheeses, and accompaniments was more than just plating; 
+          it was a form of expression, a way to weave stories into edible landscapes. His wife, C, a natural hostess with a talent for creating 
+          beautiful spaces, saw the potential in turning this passion into something special.</p>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Group Members</h6>
+        <ul class="footer-links">
+          <p>Joshua Metran</p>
+          <p target="_blank">Earryl Villaluna</p>
+          <p>Josh Evangelista</p>
+          <p>Seth Lagman</p>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li><br>
+          <li><a target="_blank" href="menu.html">Products</a></li><br>
+          <li><a href="order.html">Order</a></li><br>
+          <li><a href="about.html">About Us</a></li><br>
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12"></div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-youtube"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <script type="text/javascript" src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9f588b52d7.js"
+      crossorigin="anonymous"
+    ></script>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="Home.css">
+    <title>Unwined</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#.html"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order</a></li>
+        <li><a href="aboutus.html">About</a></li>
+      </ul>
+      <ul>
+        <li><a class="unwined" href="home.html">Unwined</a></li>
+        <li class="hmb"><a href="home.html">Home</a></li>
+        <li class="hmb"><a href="menu.html">Menu</a></li>
+        <li class="hmb"><a href="order.html">Order</a></li>
+        <li class="hmb"><a href="aboutus.html">About</a></li>
+        <li class="menu-btn" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
+
+  
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="banner" style="background-image: url(IMG/img\ 2.jpeg);"></div>
+          <div class="carousel-caption">
+            <h2 class="animate__animated animate__backInDown" style="animation-delay: 1s;" width = "800" height = "700"> <span>Unwined </span>by JC</h2>
+            <h3 class="animate__animated animate__backInRight" style="animation-delay: 2s;">We Serve the Fresh and Quality Ingredients</h3>
+            <p class="animate__animated animate__zoomIn" style="animation-delay: 3s;"><a href="">Order now</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="banner" style="background-image: url(IMG/img\ 3.jpeg);"></div>
+          <div class="carousel-caption">
+            <h2 class="animate__animated animate__zoomIn" style="animation-delay: 1s;"> <span>Unwined </span>by JC</h2>
+            <h3 class="animate__animated animate__fadeInUp" style="animation-delay: 2s;">Our Delightful box and CuppaCheese have created a one-of-a-kind and amazing experience</h3>
+            <p class="animate__animated animate__rotateInUpRight" style="animation-delay: 3s;"> <a href="">Contact us</a></p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="banner" style="background-image: url(IMG/img\ 4.jpeg);"></div>
+          <div class="carousel-caption">
+            <h2 class="animate__animated animate__fadeInRight" style="animation-delay: 1s;"> <span>Unwined </span>by JC</h2>
+            <h3 class="animate__animated animate__bounceInRight" style="animation-delay: 2s;">Cheese, meat, and harmony in every bite.</h3>
+            <p class="animate__animated animate__heartBeat" style="animation-delay: 3s;"><a href="#exploremore">Explore more</a></p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+   </section>
+
+   <a id="exploremore"></a>
+
+   <section class="ph1 ph1-bg ">
+    <div class="container-custom">
+     <div class="row">
+       <div class="col-12 col-sm-6 d-md-flex justify-content-md-center" >
+         <img src="IMG/c1.jpeg" alt="" class="img-fluid pb-4 ph1__section-thumbnail " width="553" height="746" loading="lazy">
+       </div>
+
+       <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+
+         <div class="first_content-width">
+           <span>01</span>
+           <h1 class="h2 mg-4">“Cuppacheese”</h1>
+           <p class="p1 mb-4">Our newest “Cuppacheese”, a Charcuterie Board in a Cup!🧀🍇🥓🍾🥂</p>
+           <button class="btn bg-warning text-dark">Order now</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   </section>
+
+
+   <section class="ph1  ph3-bg ">
+
+     <div class="row">
+       <div class="col-12 col-sm-6 d-md-flex justify-content-md-center order-sm-1" >
+         <img src="IMG/c2.jpeg" alt="" class="img-fluid pb-4 ph1__section-thumbnail " width="553" height="746" loading="lazy">
+       </div>
+
+       <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+
+         <div class="first_content-width">
+           <span>02</span>
+           <h1 class="h2 mg-4">Christmas Special</h1>
+           <p class="p1 mb-4">Give L🤎ve on Christmas Day🌲🧀🍇</p>
+           <button class="btn bg-warning text-dark">Order now</button>
+         </div>
+       </div>
+     </div>
+
+   </section>
+
+   <section class="ph1 ph2-bg">
+
+     <div class="container-custom">
+
+     <div class="row">
+       <div class="col-12 col-sm-6 d-md-flex justify-content-md-center" >
+         <img src="IMG/a1.jpeg" alt="" class="img-fluid pb-4 ph1__section-thumbnail " width="553" height="746" loading="lazy">
+       </div>
+
+       <div class="col-12 col-sm-6 align-self-center justify-content-md-center">
+
+         <div class="first_content-width">
+           <span>03</span>
+           <h1 class="h2 mg-4">Heart of a Charcuterie </h1>
+           <p class="p1 mb-4">Love is not just for Valentine’s Day but also to celebrate on different occasion to your loved ones❤️🥂🍾</p>
+           <button class="btn bg-warning text-dark">Order now</button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+   </section>
+
+   <section id="portfolio" class="portfolio section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-light text-center pb-5">
+                    <h1 class="heading">Customer's Review</h1>
+                    <p class="r">Rating's</p>
+                    <div class="rate">
+                      <input type="radio" id="star5" name="rate" value="5" />
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" />
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" />
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" />
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" />
+                      <label for="star1" title="text">1 star</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-light text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="IMG/r1.jpeg" alt="" class="img-fluid" width="300" height="300">
+                            <h3 class="card-title">LOVE IT!!!</h3>
+                          
+                            <button class="btn bg-warning text-dark"> Rate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-light text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="IMG/r2.jpeg" alt="" class="img-fluid" width="300" height="150">
+                            <h3 class="card-title">DELICIOUS!!!!</h3>
+                            
+                            <button class="btn bg-warning text-dark">Rate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+              <div class="card text-light text-center bg-white pb-2">
+                  <div class="card-body text-dark">
+                      <div class="img-area mb-4">
+                          <img src="IMG/r3.jpeg" alt="" class="img-fluid" width="300" height="150">
+                          <h3 class="card-title">YUMMY!!!</h3>
+                          
+                          <button class="btn bg-warning text-dark">Rate </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </section>
+
+   <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Unwined by JC Company isn't just a business; it's a passion project born from a love of good food, 
+            shared moments, and the simple act of unwinding. Our story starts not in a corporate office, but around a sun-drenched kitchen 
+            table, laughter mingling with the aroma of sizzling sausages and freshly baked bread. JC, the mastermind behind Unwind, found 
+            solace in the art of charcuterie. The meticulous layering of meats, cheeses, and accompaniments was more than just plating; 
+            it was a form of expression, a way to weave stories into edible landscapes. His wife, C, a natural hostess with a talent for creating 
+            beautiful spaces, saw the potential in turning this passion into something special.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Group Members</h6>
+          <ul class="footer-links">
+            <p>Joshua Metran</p>
+            <p>Earryl Villaluna</p>
+            <p>Josh Evangelista</p>
+            <p>Seth Lagman</p>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Links</h6>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li><br>
+            <li><a href="about.html">About Us</a></li><br>
+            <li><a href="menu.html">Menu</a></li><br>
+            <li><a href="order.html">Shopping Cart</a></li><br>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12"></div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-instagram"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>
